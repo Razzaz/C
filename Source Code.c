@@ -1,9 +1,9 @@
 #include<stdio.h>
 #include<windows.h>
 
-//deklarasi untuk setiap variable yang digunakan
+//deklarasi untuk setiap variable dan modular yang digunakan.
 int x = 1, xx = 1, stadium, myTicket(), seatToBook(), seatToBook1(), payment(), payment1(), paymentCheck(), paymentCheck1(), booked(int kursi), booked1(int kursi), stadiumLoc(int stadium), stadiumGBK(), booked(), back(), ending(), choosen(), schedule(), bookTicket(), core(), transaction(int stadium);
-void header(), help(),  welcome(), pyrocessing();
+void header(), help(),  welcome();
 char choose, ret, sport, name[100], paymentDec;
 int electic, kursi, seatSum, seatSum1, seatBook, seatBook1, arr[100], arr1[100], countSeat = 0, countSeat1 = 0, i, l;
 //variable untuk masing-masing kursi stadion sepakbola
@@ -11,12 +11,12 @@ int aa = 1, ab = 1, ac = 1, ad = 1, ae = 1, af = 1, ag = 1, ah = 1, ai = 1, aj =
 //variable untuk masing-masing kursi lapangan bulutangkis
 int aa1 = 1, ab1 = 1, ac1 = 1, ad1 = 1, ae1 = 1, af1 = 1, ag1 = 1, ah1 = 1, ai1 = 1, aj1 = 1, ak1 = 1, al1 = 1, am1 = 1, an1 = 1, ao1 = 1, ap1 = 1, aq1 = 1, ar1 = 1, as1 = 1, at1 = 1, au1 = 1, av1 = 1, aw1 = 1, ay1 = 1, ax1 = 1, az1 = 1, ba1 = 1, bb1 = 1, bc1 = 1, bd1 = 1, be1 = 1, bf1 = 1, bg1 = 1, bh1 = 1, bi1 = 1, bj1 = 1, bk1 = 1, bl1 = 1, bm1 = 1, bn1 = 1, bo1 = 1, bp1 = 1, bq1 = 1, br1 = 1, bs1 = 1, bt1 = 1, bu1 = 1, bv1 = 1, bw1 = 1, by1 = 1, bx1 = 1, bz1 = 1, ca1 = 1, cb1 = 1, cc1 = 1, cd1 = 1, ce1 = 1, cf1 = 1, cg1 = 1, ch1 = 1, ci1 = 1, cj1 = 1, ck1 = 1, cl1 = 1, cm1 = 1, cn1 = 1, co1 = 1, cp1 = 1, cq1 = 1, cr1 = 1, cs1 = 1, ct1 = 1, cu1 = 1, cv1 = 1, cw1 = 1, cy1 = 1, cx1 = 1, cz1 = 1, ka1 = 1, kb1 = 1, kc1 = 1, kd1 = 1, ke1 = 1, kf1 = 1, kg1 = 1, kh1 = 1, ki1 = 1, kj1 = 1, kk1 = 1, kl1 = 1, km1 = 1, kn1 = 1, ko1 = 1, kp1 = 1, kq1 = 1, kr1 = 1, ks1 = 1, kt1 = 1, ku1 = 1, kv1 = 1, kw1 = 1, ky1 = 1, kx1 = 1, kz1 = 1, ea1 = 1, eb1 = 1, ec1 = 1, ed1 = 1, ee1 = 1, ef1 = 1, eg1 = 1, eh1 = 1, ei1 = 1, ej1 = 1, ek1 = 1, el1 = 1, em1 = 1, en1 = 1, eo1 = 1, ep1 = 1, eq1 = 1, er1 = 1, es1 = 1, et1 = 1, eu1 = 1, ev1 = 1, ew1 = 1, ey1 = 1, ex1 = 1, ez1 = 1, fa1 = 1, fb1 = 1, fc1 = 1, fd1 = 1, fe1 = 1, ff1 = 1, fg1 = 1, fh1 = 1, fi1 = 1, fj1 = 1, fk1 = 1, fl1 = 1, fm1 = 1, fn1 = 1, fo1 = 1, fp1 = 1, fq1 = 1, fr1 = 1, fs1 = 1, ft1 = 1, fu1 = 1, fv1 = 1, fw1 = 1, fy1 = 1, fx1 = 1, fz1 = 1, ga1 = 1, gb1 = 1, gc1 = 1, gd1 = 1, ge1 = 1, gf1 = 1, gg1 = 1, gh1 = 1, gi1 = 1, gj1 = 1, gk1 = 1, gl1 = 1, gm1 = 1, gn1 = 1, go1 = 1, gp1 = 1, gq1 = 1, gr1 = 1, gs1 = 1, gt1 = 1, gu1 = 1, gv1 = 1, gw1 = 1, gy1 = 1, gx1 = 1, gz1 = 1, ha1 = 1, hb1 = 1, hc1 = 1, hd1 = 1, he1 = 1, hf1 = 1, hg1 = 1, hh1 = 1, hi1 = 1, hj1 = 1, hk1 = 1;
 
-
 int main(){
 	system("COLOR 70");
 	welcome();
 	core();
 }
+//modular inti (gabungan dari banyak modular sebelum di masukkan kedalam main)
 int core(){
 	header();
 	printf("  Menu :\n");
@@ -473,7 +473,6 @@ int back(){
 			x = 1;
 		}
 	}
-
 }
 int ending(){
 	system("cls");
@@ -488,7 +487,7 @@ int ending(){
 		Sleep(500);
 	}
 	printf("\n\n\n\n");
-	//return 0;
+
 	exit(0);
 }
 /*--------------------------------------------------------------------------------------------------------*/
@@ -2572,6 +2571,42 @@ int booked1(int kursi){
 	       printf("  Seat is not available\n");
 	   }
 	}
+	if (kursi == 191){
+	   if (hi1 == 1){
+	      printf("  Booked!\n");
+	      hi1 = 0;
+	      countSeat1++;
+	      arr1[countSeat1] = kursi;
+	   }
+	   else{
+	       printf("  Seat is not available\n");
+	   }
+	}
+	if (kursi == 192){
+	   if (hj1 == 1){
+	      printf("  Booked!\n");
+	      hj1 = 0;
+	      countSeat1++;
+	      arr1[countSeat1] = kursi;
+	   }
+	   else{
+	       printf("  Seat is not available\n");
+	   }
+	}
+	if (kursi == 193){
+	   if (hk1 == 1){
+	      printf("  Booked!\n");
+	      hk1 = 0;
+	      countSeat1++;
+	      arr1[countSeat1] = kursi;
+	   }
+	   else{
+	       printf("  Seat is not available\n");
+	   }
+	}
+	if (kursi > 193){
+		printf("  Seat is not available\n");
+	}
 }
 int booked(int kursi){
 	if (kursi == 1){
@@ -4509,6 +4544,9 @@ int booked(int kursi){
 	   else{
 	       printf("  Seat is not available\n");
 	   }
+	}
+	if (kursi > 176){
+		printf("  Seat is not available\n");
 	}
 }
 /* Creator Notes : bagian modular booked() dan booked1() merupakan data dan juga algoritma untuk pemesanan kursi
