@@ -1,3 +1,3 @@
-# Ticket Booking System Using C Languange
+# Ticket Booking System Using C Programming
 
 Hello World!
