@@ -444,7 +444,7 @@ int seatToBook(){
 int seatToBook1(){
 	printf("\n  How many seat do you want to book? : ");
 	scanf("%d", &seatBook1);
-	if (seatBook > 193){
+	if (seatBook1 > 193){
 		printf("  Too many! Max seat you can book is 193");
 		seatToBook1();
 		}
